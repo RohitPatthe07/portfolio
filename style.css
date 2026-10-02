@@ -553,3 +553,10 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+nav a.active {
+    color: #25f2b5;
+}
+
+nav a.active::after {
+    width: 100%;
+}
