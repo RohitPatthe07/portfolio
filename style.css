@@ -95,14 +95,13 @@ nav a:hover::after {
 section {
     min-height: 70vh;
     padding: 100px 8%;
-
-    opacity: 0;
-    transform: translateY(45px);
-
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
 }
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 section.show {
     opacity: 1;
@@ -559,4 +558,14 @@ nav a.active {
 
 nav a.active::after {
     width: 100%;
+}
+
+#contact {
+    opacity: 1;
+    transform: none;
+}
+
+footer {
+    opacity: 1;
+    display: block;
 }
